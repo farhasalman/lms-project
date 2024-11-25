@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State Public Library</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fs-2" href="index.html"><img src="./assets/images/logolib.jpg " alt="" style="width: 50px; height: 50px; margin-right: 10px;">
+        State Public Library</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-5"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item fs-5"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item fs-5"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item fs-5"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item fs-5"><a class="nav-link" href="./login.html">login</a></li>
+
+        </ul>
+      </div>
+      <form class="search-form ms-5">
+        <input type="text" class="search-input rounded" placeholder="Search...">&nbsp
+        <button type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <!-- first Section -->
+  <section class="first text-center">
+    <h1>World To Know More</h1>
+    <p></p>
+    <a href="#features" class="btn btn-primary">Explore</a>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 p-5 fw-bold">Library History</h2>
+      <p>
+        The rise and development of libraries are not only part of human progress but also a result of it. In the
+        history of libraries in Kerala, the Kozhikode Public Library holds an undeniable place. While libraries were
+        blooming around the world, the Kozhikode Public Library was established in 1927 under the Municipal
+        Corporation's responsibility, with the efforts of the local people. Since the library was part of the
+        Malabar-Madras state, following the Public Libraries Act of 1948, the management responsibility of the library
+        was transferred to the Malabar Local Library Authority in 1952. The authority's chairman was K.P. Gopal Menon, a
+        lawyer and freedom fighter. The Kozhikode Public Library later evolved into the Malabar District Library. The
+        first librarian of the library was K.M. Gopi, a library science expert.
+      </p>
+      <p>
+        Due to the passage of time and lack of space, the old building of the library was demolished, and it was decided
+        to rebuild it. In 1994, a society was formed for this purpose, and the building work was completed. From 1995
+        onwards, this society operated the library under the name "Kozhikode Public Library & Research Center."
+      </p>
+      <p>
+        According to the Kerala Public Libraries Act of 1989, the assets and liabilities of local library authorities
+        were to be handed over to the respective district library councils. In opposition to this, local library
+        employees and the Kerala State Library Council intervened, and the issue was taken to the Hon'ble Kerala High
+        Court. As a result, on 27.05.2017, the Kerala High Court issued a ruling, and following the proceedings of the
+        Kozhikode District Collector, the assets and liabilities of the Kozhikode Public Library & Research Center were
+        transferred to the District Library Council.
+      </p>
+      <p>
+        In 2019, according to the decision of the Kerala State Library Council, the Kozhikode Public Library & Research
+        Center and the Kozhikode District Central Library were merged and elevated to the State Public Library &
+        Research Center.
+      </p>
+    </div>
+  </section>
+
+
+
+
+  
+
+  
+  <div class="container-fluid bg-secondary-subtle rounded-4 mt-4 p-5">
+    <h2 class="text-center mb-4 fs-2 fw-bold">Library Spotlight</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <button class="arrow left-arrow">&#8249;</button> <!-- Left arrow -->
+        <div class="image-rotator position-relative overflow-hidden">
+          <img src="./assets/images/41a4aipwsfL.AC_SX250.jpg" alt="Library Interior" class="img-fluid active">
+          <img src="./assets/images/51qJYOp2BmL.AC_SX250.jpg" alt="Reading Section" class="img-fluid">
+          <img src="./assets/images/41rng6JAerL.AC_SX250.jpg" alt="Digital Library" class="img-fluid">
+          <img src="./assets/images/41SSijKKUbL.AC_SX250.jpg" alt="Kids Section" class="img-fluid">
+          <img src="./assets/images/51lgajkMaOL.AC_SX250.jpg" alt="Kids Section" class="img-fluid">
+          <img src="./assets/images/51OVg64PTcL.AC_SX250.jpg" alt="Kids Section" class="img-fluid">
+          <img src="./assets/images/51pDIzonqgL.AC_SX250.jpg" alt="Kids Section" class="img-fluid">
+          <button class="arrow right-arrow">&#8250;</button> <!-- Right arrow -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- JavaScript -->
+    <script>
+      const rotatorImages = document.querySelectorAll('.image-rotator img');
+      let currentIndex = 0;
+
+      setInterval(() => {
+        // Remove the active class from the current image
+        rotatorImages[currentIndex].classList.remove('active');
+
+        // Move to the next image (loop back to start if at the end)
+        currentIndex = (currentIndex + 1) % rotatorImages.length;
+
+        // Add the active class to the new current image
+        rotatorImages[currentIndex].classList.add('active');
+      }, 3000); // Change every 3 seconds
+    </script>
+
+
+
+
+
+
+
+
+
+   <!-- Membership Section -->
+<section id="membership" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 p-5">Membership Types</h2>
+    <div class="table-responsive-lg shadow-lg rounded"> <!-- Add table-responsive class here -->
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Category Type</th>
+            <th scope="col">Membership Validity</th>
+            <th scope="col">Maximum Number of Books Borrowed</th>
+            <th scope="col">Fee</th>
+            <th scope="col">Minimum Age Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A Class</td>
+            <td>Life Long</td>
+            <td>3</td>
+            <td>Admission Fee: ₹5000, Monthly Subscription Fee: Nil</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>B Class</td>
+            <td>One Year</td>
+            <td>2</td>
+            <td>Admission Fee: ₹100, Monthly Subscription Fee: ₹20 (₹200 for a year)</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>C Class (Student Membership)</td>
+            <td>Up to completion of academic course</td>
+            <td>2</td>
+            <td>Admission Fee: ₹50, Monthly Subscription Fee: ₹10 (₹100 for a year)</td>
+            <td>NIL</td>
+          </tr>
+          <tr>
+            <td>D Class</td>
+            <td>1 Day</td>
+            <td>NIL</td>
+            <td>₹10</td>
+            <td>NIL</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+    <!-- features -->
+
+
+    <section id="features" class=" mt-5 py-5 bg-light">
+      <div class="container text-center mt-5">
+        <h2 class="mb-4  fw-bold mt-5 py-5">Features of Our Library Management System</h2>
+        <p class=" mb-5">Our system is designed to streamline library operations and enhance user experience.</p>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/managbook.jpeg" class="card-img-top" alt="Manage Books">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Manage Books</h5>
+                  <p class="card-text">Add, update, or remove books in your catalog with ease. Keep your library up to date and well-organized.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/membermngmnt.jpeg" class="card-img-top" alt="Member Management">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Member Management</h5>
+                  <p class="card-text">Easily manage member accounts, view borrowing history, and track due dates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/advsrch.jpeg" class="card-img-top" alt="Advanced Search">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Advanced Search</h5>
+                  <p class="card-text">Search for books by title, author, genre, and more. Find what you're looking for in seconds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="row g-4 mt-4">
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/borrowing.jpeg" class="card-img-top" alt="Borrowing System">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Borrowing System</h5>
+                  <p class="card-text">A simple and efficient borrowing process with automatic due date notifications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/reprt.jpeg" class="card-img-top" alt="Reports & Analytics">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Reports & Analytics</h5>
+                  <p class="card-text">Track library performance with detailed reports and analytics on books, members, and borrowing trends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-3 h-100 position-relative">
+              <img src="./assets/images/notification.jpeg" class="card-img-top" alt="Real-time Notifications">
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <h5 class="card-title">Real-time Notifications</h5>
+                  <p class="card-text">Receive real-time alerts for overdue books, membership renewals, and more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <!-- General Rules Alert -->
+    <section id="rules" class="py-5">
+      <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <h4 class="alert-heading">General Rules</h4>
+          <ul>
+            <li>Strict silence and discipline must be maintained in the library. Misuse of cell phones is not allowed.
+            </li>
+            <li>Smoking, eating, sleeping, and talking loudly are strictly prohibited in the library.</li>
+            <li>Documents taken out of the shelves must be left on the table. Replacing books on shelves is not
+              encouraged
+              as they may get misplaced. A misplaced book is like a lost book.</li>
+            <li>A non-member can use the library material on the premises with the permission of the Librarian.</li>
+            <li>Readers should not mark, underline, dog-ear, write, tear pages, or otherwise damage the library
+              documents.
+            </li>
+            <li>Newspapers, magazines, and journals must be read only in the library on specific tables and should not
+              be
+              taken to any other reading areas.</li>
+            <li>No library material can be taken out of the library without permission. Unauthorized removal of anything
+              belonging to the library will be treated as theft and dealt with accordingly.</li>
+            <li>Anyone who violates the rules and regulations of the library would be liable to lose the privilege of
+              library membership and may be debarred from using the library facilities.</li>
+            <li>Suggestions on all aspects of library services are welcome.</li>
+          </ul>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-white bg-dark pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-4">About Us</h5>
+            <p>
+              The rise and development of libraries are not only part of human progress but also a result of it. In the
+        history of libraries in Kerala, the Kozhikode Public Library holds an undeniable place. While libraries were
+        blooming around the world,
+            </p>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-telephone-fill me-2"></i>Phone: +1 234 567 890</li>
+              <li><i class="bi bi-envelope-fill me-2"></i>Email: info@library.com</li>
+              <li><i class="bi bi-geo-alt-fill me-2"></i>Address: 123 Library, City</li>
+            </ul>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-4">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="row mt-4">
+          <div class="col text-center">
+            <h5 class="text-uppercase mb-3">Follow Us</h5>
+            <a href="#" class="text-white social-icon me-3"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="text-white social-icon me-3"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="#" class="text-white social-icon me-3"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-white social-icon me-3"><i class="bi bi-linkedin fs-4"></i></a>
+            <a href="#" class="text-white social-icon"><i class="bi bi-youtube fs-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 State Public Library. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
